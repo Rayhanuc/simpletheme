@@ -1,24 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<title>this is our first web site</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" type="text/css" href="anoceanofsky.css" />
-</head>
-<body>
-<div id="page">
-  <div class="topNaviagationLink"><a href="#">Home</a></div>
-  <div class="topNaviagationLink"><a href="#">About</a></div>
-  <div class="topNaviagationLink"><a href="#">Portfolio</a></div>
-  <div class="topNaviagationLink"><a href="#">Services</a></div>
-  <div class="topNaviagationLink"><a href="#">Contact</a></div>
-</div>
-<div id="mainPicture">
-  <div class="picture">
-    <div id="headerTitle">this is our first web site</div>
-    <div id="headerSubtext">Free CSS Website Template</div>
-  </div>
-</div>
+<?php get_header();?>
+
+
+
 <div class="contentBox">
   <div class="innerBox">
     <div class="contentTitle">The Title of an Article</div>
@@ -45,5 +28,6 @@
   </div>
 </div>
 <div id="footer"><a href="http://www.aszx.net">web development</a> by <a href="http://www.bryantsmith.com">bryant smith</a> | <a href="http://validator.w3.org/check?uri=referer">valid xhtml</a> | <a href="http://jigsaw.w3.org/css-validator">valid css</a></div>
+<?php wp_footer();?>
 </body>
 </html>
