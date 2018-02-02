@@ -3,7 +3,7 @@
 <head>
 <title>this is our first web site</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/css/anoceanofsky.css" />
+
 <?php wp_head();?>
 </head>
 <body <?php body_class();?>>
@@ -16,7 +16,7 @@
 </div>
 <div id="mainPicture">
   <div class="picture" style="background-image: url('<?php echo header_image();?>');">
-    <div id="headerTitle">this is our first web site</div>
-    <div id="headerSubtext">Free CSS Website Template</div>
+    <div id="headerTitle"><?php bloginfo('title');?></div>
+    <div id="headerSubtext"><?php bloginfo('description');?></div>
   </div>
 </div>
