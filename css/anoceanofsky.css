@@ -29,7 +29,7 @@ body {
     background: #f13030;
 }
 
-.topNaviagationLink
+li
 {
 text-align:center;
 position:relative;
@@ -42,23 +42,24 @@ line-height: 35px;
 float:left;
 color:#CEEAEE;
 font-family:"Adobe Garamond Pro Bold", Georgia, "Times New Roman", Times, serif;
+list-style: none;
 }
 
 
-.topNaviagationLink a
+li a
 {
 text-decoration:none;
 color:white;
 }
 
-.topNaviagationLink a:hover
+li a:hover
 {
 color:#0C61C9;
 display: block;
 width:121px;
 height: 35px;
 line-height: 35px;
-background-image:url(images/tab.png);
+background: yellow;
 
 }
 
@@ -135,6 +136,7 @@ color: #fdfffc;
 background: #f13030;
 display: inline-block;
 padding: 5px 10px;
+text-decoration: none;
 }
 
 .contentText
