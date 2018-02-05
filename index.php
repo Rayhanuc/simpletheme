@@ -25,4 +25,4 @@
 
 <?php get_footer();?>
 
-<!-- class-28 will start -->
+<!-- class-29 will start -->

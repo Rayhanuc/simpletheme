@@ -65,6 +65,54 @@ function cmb2_simple_metaboxes() {
 	) );
 
 
+	//For Team 
+
+	$team = new_cmb2_box(array(
+		'id'    	  => 'team-metabox',
+		'title' 	  => 'Team Information',
+		'object_types' => array('team'),
+		'context' 	  => 'normal',
+	));
+
+	$team->add_field( array(
+		'name' => 'Designation',
+		'default' => 'CEO & Founder',
+		'id'    => 'designation',
+		'type'  => 'text',
+	) );
+
+	$team->add_field( array(
+		'name'    => 'Content',
+		'id'      => 'content',
+		'type'    => 'wysiwyg',
+	) );
+
+	$team->add_field( array(
+		'name'    => 'Email',
+		'id'      => 'email',
+		'type'    => 'text_email',
+	) );
+
+	$team->add_field( array(
+		'name' => 'Button Text',
+		'default' => 'Contact',
+		'id'    => 'button_text',
+		'type'  => 'text',
+	) );
+
+	$team->add_field( array(
+		'name' => 'Button URL',
+		'id'   => 'button_url',
+		'type' => 'text_url',
+	) );
+
+	$team->add_field( array(
+		'name' => 'Button Bg Color',
+		'id'    => 'btn-bg-color',
+		'default' => '#d9d9d9',
+		'type'  => 'colorpicker'
+	) );
+
 
 }
 
