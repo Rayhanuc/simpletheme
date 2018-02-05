@@ -34,4 +34,15 @@ add_action( 'wp_enqueue_scripts', function(){
 require get_template_directory().'/inc/custom-metabox.php';
 
 
+add_action( 'widgets_init',function(){
+
+register_sidebar( array(
+'name' => 'footer widget',
+'id' => 'footer-wd',
+'before_widget' => '<section>',
+'after_widget' => '</section>',
+));
+})
+
+
 ?>
