@@ -42,7 +42,22 @@ register_sidebar( array(
 'before_widget' => '<section>',
 'after_widget' => '</section>',
 ));
-})
+});
 
+//shortcode
+add_shortcode( 'ami', 'output_shortcode' );
+function output_shortcode ($first,$content) {
+	$output = shortcode_atts(array(
+		"kalar" => 'blue',
+		"text_align" => 'left',
+		"font_size" => '20px',
+		"text_transform" => '',
+
+	),$first);
+
+	extract($output);
+	echo "<h1 style='text-align:".$text_align.";color:".$kalar.";font-size:".$font_size.";text-transform:".$text_transform."'>$content</h1>";
+}
 
 ?>
+
