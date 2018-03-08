@@ -42,6 +42,11 @@ register_sidebar( array(
 'before_widget' => '<section>',
 'after_widget' => '</section>',
 ));
+register_sidebar( array(
+'name' => 'Right Sidebar',
+'description' => 'keep your Right Sidebar Widget here',
+'id' => 'right-sidebar',
+));
 });
 
 //shortcode
@@ -56,8 +61,13 @@ function output_shortcode ($first,$content) {
 	),$first);
 
 	extract($output);
-	echo "<h1 style='text-align:".$text_align.";color:".$kalar.";font-size:".$font_size.";text-transform:".$text_transform."'>$content</h1>";
+	echo "<h1 style='text-align:".$text_align.";color:".$kalar.";font-size:".$font_size.";text-transform:".$text_transform."'>".do_shortcode($content)."</h1>";
 }
+
+add_shortcode( 'abar', function(){
+	echo "<h1>Output</h1>";
+} )
+//TF Class-3 strated
 
 ?>
 
